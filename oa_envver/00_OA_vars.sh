@@ -36,16 +36,7 @@ then
 fi
 
 
-# Install envver, if not already installed
-if [[ ! -e /opt/bin/envver-linux-amd64 ]];
-then
-  mkdir -p /opt/bin
-  curl https://s3.amazonaws.com/lexmark-devops-artifacts/binaries/envver-linux-amd64 -o /opt/bin/envver-linux-amd64
-  chmod -R +rx /opt/bin
-fi
-
-
-# Verify installation
+# Verify installation of envver
 if [[ ! -x /opt/bin/envver-linux-amd64 ]];
 then
   echo "/opt/bin/envver-linux-amd64 cannot be located or is not executable"
