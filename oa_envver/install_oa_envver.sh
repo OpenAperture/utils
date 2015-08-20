@@ -11,3 +11,6 @@ chmod 755 /etc/my_init.d/00_OA_vars.sh
 mkdir -p /opt/bin
 curl https://s3.amazonaws.com/lexmark-devops-artifacts/binaries/envver-linux-amd64 -o /opt/bin/envver-linux-amd64
 chmod 755 /opt/bin /opt/bin/*
+
+echo '. /etc/container_environment.sh' >> /etc/profile
+echo '. /etc/container_environment.sh' >> /etc/bash.bashrc
