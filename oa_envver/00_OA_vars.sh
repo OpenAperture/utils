@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # This script allows OpenAperture to dynamically send environment variables to a container at runtime:
 #   * writes /etc/container_environment files for Passenger Phusion Docker containers (baseimage)
@@ -18,8 +18,8 @@
 #     * https://s3.amazonaws.com/lexmark-devops-artifacts/binaries/envver-linux-amd64
 #     * (envver binary should be installed at /opt/bin/envver-linux-amd64)
 #     * (chmod -R +rx /opt/bin)
-#   * Needs /bin/sh and awk
-#     * NOTE: for more information on special features of /bin/sh and awk as used in this script:
+#   * Needs /bin/bash and awk
+#     * NOTE: for more information on special features of /bin/bash and awk as used in this script:
 #       * http://unix.stackexchange.com/questions/146942/how-can-i-test-if-a-variable-is-empty-or-contains-only-spaces
 #       * http://stackoverflow.com/questions/19154996/awk-split-only-by-first-occurrence
 #       * http://www.unix.com/shell-programming-and-scripting/55172-awk-print-redirection-variable-file-name.html
